@@ -14,11 +14,11 @@ export default function SearchBox() {
 
   return (
     <div className={css.container}>
-      <label htmlFor={`search-${id}`}>Find contacts by name</label>
+      <label htmlFor={id}>Find contacts by name</label>
       <input
         name="search"
         type="text"
-        id={`search-${id}`}
+        id={id}
         value={nameFilter}
         onChange={handleSearch}
         className={css.input}
